@@ -1,13 +1,13 @@
-# PulseGuard 💊 — Medication Safety Hub
+# Medivia 💊 — Medication Safety Hub
 
-**Team Name:** PulseGuard
+**Team Name:** Dual-Deploy
 
 ## Team Members
-- **Member 1:** [Your Name] — [Your College]
-- **Member 2:** [Your Name] — [Your College]
+- **Member 1:** Nayana J Pillai — College of Engineering ,Chengannur
+- **Member 2:** Shruthi Joe — College of Engineering ,Chengannur
 
 ## Hosted Project Link
-> _Add your deployment link here (e.g., Render, Railway, Vercel)_
+> https://pulse-guard-three.vercel.app/
 
 ---
 
