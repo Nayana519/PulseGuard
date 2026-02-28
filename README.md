@@ -127,7 +127,8 @@ npm start
 
 ### Screenshots _(add your own after running the app)_
 
-![Landing Page](screenshots/landing.png)
+![Landing Page](<img width="2866" height="1556" alt="image" src="https://github.com/user-attachments/assets/da378327-acd7-4910-b96a-f22d8ea074b8" />
+/landing.png)
 *PulseGuard landing page — features overview, How It Works section, and CTA. No fake statistics — only honest claims backed by real API integrations.*
 
 ![Patient Dashboard](screenshots/patient_dashboard.png)
