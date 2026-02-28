@@ -430,8 +430,8 @@ Marks all alerts as read. Returns `{ "message": "All alerts marked as read" }`.
 ---
 
 ## Team Contributions
-- **[Name 1]:** Frontend development — React component architecture, UI/UX design system, interaction alarm, pharmacokinetic graph, caregiver dashboard
-- **[Name 2]:** Backend development — Flask API design, SQLAlchemy models, NIH RxNav + openFDA integration, APScheduler background jobs, JWT authentication
+- **Shruthi Joe:** Frontend development — React component architecture, UI/UX design system, interaction alarm, pharmacokinetic graph, caregiver dashboard
+- **Nayana J Pillai:** Backend development — Flask API design, SQLAlchemy models, NIH RxNav + openFDA integration, APScheduler background jobs, JWT authentication
 
 ---
 
