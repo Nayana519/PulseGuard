@@ -26,7 +26,7 @@ export default function LandingPage() {
           >
             💊
           </div>
-          <span className="font-black text-lg text-gray-900">PulseGuard</span>
+          <span className="font-black text-lg text-gray-900">Medivia</span>
         </div>
 
         <div className="hidden md:flex items-center gap-8">
@@ -248,10 +248,10 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
-                About PulseGuard
+                About Medivia
               </h2>
               <p className="text-lg text-gray-600 mb-4">
-                PulseGuard is a comprehensive medication safety platform
+                Medivia is a comprehensive medication safety platform
                 designed to protect patients from preventable drug interactions
                 and dosing errors. Our mission is to empower individuals and
                 healthcare providers with real-time safety intelligence.
@@ -259,13 +259,13 @@ export default function LandingPage() {
               <p className="text-lg text-gray-600 mb-4">
                 Built on cutting-edge pharmacokinetic science and integrated
                 with trusted medical databases (NIH RxNav, FDA Drug Labeling),
-                PulseGuard analyzes medication profiles in real-time to detect
+                Medivia analyzes medication profiles in real-time to detect
                 dangerous combinations.
               </p>
               <p className="text-lg text-gray-600">
                 Whether you're managing chronic conditions, recovering from
                 surgery, or simply taking multiple vitamins and supplements,
-                PulseGuard has your back.
+                Medivia has your back.
               </p>
             </div>
 
@@ -321,7 +321,7 @@ export default function LandingPage() {
               {
                 icon: "📧",
                 title: "Email",
-                value: "support@pulseguard.health",
+                value: "support@Medivia.health",
               },
               { icon: "📱", title: "Phone", value: "+1 (555) 123-4567" },
               {
@@ -409,7 +409,7 @@ export default function LandingPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <span className="text-2xl">💊</span>
-                <span className="font-black text-gray-900">PulseGuard</span>
+                <span className="font-black text-gray-900">Medivia</span>
               </div>
               <p className="text-gray-600 text-sm">
                 Medication safety for everyone.
@@ -456,7 +456,7 @@ export default function LandingPage() {
             className="text-center"
           >
             <p className="text-gray-600 text-sm">
-              © 2026 PulseGuard. All rights reserved. | Made with ❤️ for your health by Shru and Naynu
+              © 2026 Medivia. All rights reserved. | Made with ❤️ for your health by Shru and Naynu
             </p>
           </div>
         </div>

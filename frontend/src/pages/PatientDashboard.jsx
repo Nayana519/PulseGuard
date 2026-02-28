@@ -139,7 +139,7 @@ export default function PatientDashboard() {
             💊
           </div>
           <div>
-            <div className="font-black text-white text-lg">PulseGuard</div>
+            <div className="font-black text-white text-lg">Medivia</div>
             <div className="text-sm text-blue-200">{user?.name}</div>
           </div>
         </div>

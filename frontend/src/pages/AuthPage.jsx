@@ -64,7 +64,7 @@ export default function AuthPage() {
             }}>
             <span className="text-4xl">💊</span>
           </div>
-          <h1 className="text-4xl font-black text-white tracking-tight">PulseGuard</h1>
+          <h1 className="text-4xl font-black text-white tracking-tight">Medivia</h1>
           <p className="text-slate-500 mt-1.5 font-medium">Medication Safety Hub</p>
         </div>
 

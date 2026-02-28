@@ -77,3 +77,51 @@ def get_patients():
         })
 
     return jsonify(result)
+
+
+@caregiver_bp.route('/patient-profile/<int:patient_id>', methods=['GET'])
+@jwt_required()
+def get_patient_profile(patient_id):
+    """Full patient profile — only accessible by a linked caregiver."""
+    uid = int(get_jwt_identity())
+    user = User.query.get(uid)
+    if user.role != 'caregiver':
+        return jsonify({'error': 'Caregivers only'}), 403
+
+    # Verify this caregiver is actually linked to this patient
+    link = CaregiverLink.query.filter_by(
+        caregiver_id=uid, patient_id=patient_id
+    ).first()
+    if not link:
+        return jsonify({'error': 'Not authorised to view this patient'}), 403
+
+    patient = User.query.get_or_404(patient_id)
+    meds = Medication.query.filter_by(patient_id=patient_id, is_active=True).all()
+
+    # Compliance (last 7 days)
+    week_ago = datetime.utcnow() - timedelta(days=7)
+    all_logs = DoseLog.query.join(Medication).filter(
+        Medication.patient_id == patient_id,
+        DoseLog.created_at >= week_ago
+    ).all()
+    total = len(all_logs)
+    taken = sum(1 for l in all_logs if l.status == 'taken')
+    compliance = round((taken / total * 100) if total > 0 else 100, 1)
+
+    # Recent dose history (last 20 logs across all meds)
+    dose_history = DoseLog.query.join(Medication).filter(
+        Medication.patient_id == patient_id
+    ).order_by(DoseLog.created_at.desc()).limit(20).all()
+
+    # Active alerts
+    active_alerts = Alert.query.filter_by(
+        user_id=patient_id, is_read=False
+    ).order_by(Alert.created_at.desc()).all()
+
+    return jsonify({
+        'patient': patient.to_dict(),
+        'medications': [m.to_dict() for m in meds],
+        'compliance_percent': compliance,
+        'dose_history': [d.to_dict() for d in dose_history],
+        'active_alerts': [a.to_dict() for a in active_alerts],
+    })
