@@ -4,7 +4,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import LandingPage from "./pages/LandingPage";
 import AuthPage from "./pages/AuthPage";
 import PatientDashboard from "./pages/PatientDashboard";
-import CaregiverDashboard from './pages/CaregiverDashboard';
+import CaregiverDashboard from "./pages/CaregiverDashboard";
 
 function ProtectedRoute({ children, requiredRole }) {
   const { user, loading } = useAuth();

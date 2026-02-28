@@ -7,11 +7,10 @@ import ViewPatientProfileModal from "../components/ViewPatientProfileModal";
 const STATUS = {
   green: {
     label: "Stable",
-    dot: "#10b981",
-    glow: "rgba(16,185,129,0.5)",
-    bg: "linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%)",
-    border: "2px solid #10b981",
-    textColor: "#047857",
+    dot: "#22c55e",
+    glow: "rgba(34,197,94,0.4)",
+    bg: "rgba(34,197,94,0.08)",
+    border: "rgba(34,197,94,0.2)",
   },
   yellow: {
     label: "Attention",
