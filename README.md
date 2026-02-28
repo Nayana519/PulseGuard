@@ -125,30 +125,9 @@ npm start
 
 ## Project Documentation
 
-### Screenshots _(add your own after running the app)_
+###Project Live Video
 
-![Landing Page](<img width="2866" height="1556" alt="image" src="https://github.com/user-attachments/assets/da378327-acd7-4910-b96a-f22d8ea074b8" />
-/landing.png)
-*PulseGuard landing page — features overview, How It Works section, and CTA. No fake statistics — only honest claims backed by real API integrations.*
-
-![Patient Dashboard](screenshots/patient_dashboard.png)
-*Patient dashboard showing the animated Safety Traffic Light (green/yellow/red), medication cards with overdue and low stock badges, one-click dose logging, and compliance ring.*
-
-![Fatal Interaction Alarm](screenshots/interaction_alarm.png)
-*The fatal interaction alarm triggered when a dangerous drug combo is attempted. Red pulsing screen border, skull icon, drug names, clinical description, and audio alert. The entry is completely blocked.*
-
-![Add Medication Modal](screenshots/add_medication.png)
-*Add Medication modal with live FDA lookup — boxed warnings in red, indications in blue, adverse reactions in amber — all fetched from openFDA in real time as the user types.*
-
-![Caregiver Dashboard](screenshots/caregiver_dashboard.png)
-*Caregiver dashboard showing linked patients with colour-coded status cards (green = stable, yellow = attention, red = critical), compliance percentages, and warning badges.*
-
-![View Patient Profile](screenshots/patient_profile.png)
-*Caregiver's View Patient Profile modal — full medication list with overdue/low stock indicators, recent dose history (taken / missed / skipped), and all active alerts.*
-
-![Emergency QR Code](screenshots/emergency_qr.png)
-*Emergency QR Code modal — full-screen QR encoding the patient's complete medication profile (name, all drugs, doses, warnings) for paramedic scanning.*
-
+https://drive.google.com/drive/folders/1u6kGqRpFyi5lgjNqWSiwe5I7Q23ocn1h?usp=drive_link
 ---
 
 ### System Architecture
