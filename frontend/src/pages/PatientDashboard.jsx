@@ -106,7 +106,8 @@ export default function PatientDashboard() {
     <div
       className="min-h-screen"
       style={{
-        background: "linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f5f3ff 100%)",
+        background:
+          "linear-gradient(135deg, #ffffff 0%, #f0f9ff 50%, #f5f3ff 100%)",
       }}
     >
       <style>{`
@@ -217,7 +218,9 @@ export default function PatientDashboard() {
                 borderBottom: "2px solid #3b82f6",
               }}
             >
-              <span className="font-black text-white text-lg">Alerts & Notifications</span>
+              <span className="font-black text-white text-lg">
+                Alerts & Notifications
+              </span>
               {alerts.length > 0 && (
                 <button
                   onClick={markAllRead}
@@ -230,8 +233,12 @@ export default function PatientDashboard() {
             {alerts.length === 0 ? (
               <div className="flex-1 flex flex-col items-center justify-center p-8 text-center">
                 <div className="text-5xl mb-3">✅</div>
-                <p className="text-gray-700 text-base font-semibold">No unread alerts</p>
-                <p className="text-gray-500 text-sm mt-1">You're all caught up!</p>
+                <p className="text-gray-700 text-base font-semibold">
+                  No unread alerts
+                </p>
+                <p className="text-gray-500 text-sm mt-1">
+                  You're all caught up!
+                </p>
               </div>
             ) : (
               <div className="p-4 space-y-3">
@@ -267,8 +274,7 @@ export default function PatientDashboard() {
           <div
             className="dash-item rounded-3xl p-6 border-4"
             style={{
-              background:
-                "linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%)",
+              background: "linear-gradient(135deg, #fee2e2 0%, #fef2f2 100%)",
               borderColor: "#dc2626",
               boxShadow:
                 "0 0 60px rgba(220, 38, 38, 0.4), inset 0 0 40px rgba(220, 38, 38, 0.08)",
@@ -306,10 +312,15 @@ export default function PatientDashboard() {
                         {interaction.med1} + {interaction.med2}
                       </div>
                       <div className="text-red-800 text-sm leading-relaxed font-semibold">
-                        {interaction.interactions && Array.isArray(interaction.interactions) ? (
-                          interaction.interactions.slice(0, 1).map((i, idx) => (
-                            <div key={idx}>{typeof i === 'string' ? i : i.description || i}</div>
-                          ))
+                        {interaction.interactions &&
+                        Array.isArray(interaction.interactions) ? (
+                          interaction.interactions
+                            .slice(0, 1)
+                            .map((i, idx) => (
+                              <div key={idx}>
+                                {typeof i === "string" ? i : i.description || i}
+                              </div>
+                            ))
                         ) : interaction.reason ? (
                           <div>{interaction.reason}</div>
                         ) : (
@@ -320,7 +331,8 @@ export default function PatientDashboard() {
                   ))}
                 </div>
                 <div className="text-red-900 text-base mt-4 font-black bg-white bg-opacity-60 p-4 rounded-xl border-2 border-red-700">
-                  ⚡ IMMEDIATE ACTION REQUIRED: Contact your healthcare provider immediately.
+                  ⚡ IMMEDIATE ACTION REQUIRED: Contact your healthcare provider
+                  immediately.
                 </div>
               </div>
             </div>
@@ -481,9 +493,10 @@ export default function PatientDashboard() {
             >
               <div
                 className="px-6 py-5"
-                style={{ 
-                  background: "linear-gradient(135deg, #1e3a8a 0%, #1f2937 100%)",
-                  borderBottom: "3px solid #3b82f6"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #1e3a8a 0%, #1f2937 100%)",
+                  borderBottom: "3px solid #3b82f6",
                 }}
               >
                 <p className="text-xs font-black tracking-widest text-blue-300 uppercase">

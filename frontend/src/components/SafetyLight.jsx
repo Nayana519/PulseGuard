@@ -9,7 +9,7 @@ const CONFIG = {
     bg: "linear-gradient(135deg, rgba(34,197,94,0.15), rgba(16,185,129,0.08))",
     border: "rgba(34,197,94,0.4)",
     dotColor: "#10b981",
-    textColor: "#065f46"
+    textColor: "#065f46",
   },
   yellow: {
     label: "⚠️  ATTENTION NEEDED",
@@ -19,7 +19,7 @@ const CONFIG = {
     bg: "linear-gradient(135deg, rgba(245,158,11,0.15), rgba(234,179,8,0.08))",
     border: "rgba(245,158,11,0.4)",
     dotColor: "#f59e0b",
-    textColor: "#78350f"
+    textColor: "#78350f",
   },
   red: {
     label: "🚨 IMMEDIATE ALERT",
@@ -29,7 +29,7 @@ const CONFIG = {
     bg: "linear-gradient(135deg, rgba(239,68,68,0.18), rgba(220,38,38,0.1))",
     border: "rgba(239,68,68,0.5)",
     dotColor: "#dc2626",
-    textColor: "#7f1d1d"
+    textColor: "#7f1d1d",
   },
 };
 
