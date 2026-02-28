@@ -14,6 +14,10 @@ scheduler = BackgroundScheduler()
 
 def create_app():
     app = Flask(__name__)
+    
+    @app.route("/")
+    def home():
+        return "Hello, Render!"
 
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///pulseguard.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
